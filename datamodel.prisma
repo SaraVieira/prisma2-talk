@@ -1,0 +1,5 @@
+type Color {
+  id: Int! @id @db(name: "colors")
+  name: String!
+  value: String!
+}

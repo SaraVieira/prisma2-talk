@@ -1,0 +1,8 @@
+prototype: true
+databases:
+  default:
+    connector: sqlite-native
+    databaseFile: ./db/colors.db
+    migrations: true
+    active: true
+    rawAccess: true

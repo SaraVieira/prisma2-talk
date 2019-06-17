@@ -1,0 +1,27 @@
+{
+  "name": "photon-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:prisma/photon-example.git",
+  "author": "Tim Suchanek <suchanek@prisma.io>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "prod": "ts-node main.ts",
+    "start": "nodemon --watch 'main.ts' --exec 'ts-node' main.ts",
+    "postinstall": "photon-generate -o @generated/photon"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.2",
+    "photon-generate": "^0.0.32",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.5.0-dev.20190515",
+    "express": "4.17.1",
+    "nodemon": "1.19.1"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
